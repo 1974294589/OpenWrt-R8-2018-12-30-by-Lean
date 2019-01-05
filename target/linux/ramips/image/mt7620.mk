@@ -249,6 +249,13 @@ define Device/ex3700-ex3800
 endef
 TARGET_DEVICES += ex3700-ex3800
 
+define Device/fir300m
+  DTS := Fir300M
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := Phicomm Fir300M
+endef
+TARGET_DEVICES += fir300m
+
 define Device/gl-mt300a
   DTS := GL-MT300A
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
@@ -415,6 +422,13 @@ define Device/mt7620a_v22sg
   SUPPORTED_DEVICES := mt7620a_v22sg
 endef
 TARGET_DEVICES += mt7620a_v22sg
+
+define Device/mw300r-v6
+  DTS := MW300R-V6
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := MW300R-V6
+endef
+TARGET_DEVICES += mw300r-v6
 
 define Device/mzk-750dhp
   DTS := MZK-750DHP

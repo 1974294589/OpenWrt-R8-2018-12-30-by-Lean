@@ -63,6 +63,7 @@ platform_check_image() {
 	ex2700|\
 	ex3700|\
 	f7c027|\
+	fir300m|\
 	firewrt|\
 	fonera20n|\
 	freestation5|\
@@ -110,6 +111,7 @@ platform_check_image() {
 	mpr-a2|\
 	mr-102n|\
 	mt7628|\
+	mw300r-v6|\
 	mzk-750dhp|\
 	mzk-dp150n|\
 	mzk-ex300np|\

@@ -196,6 +196,9 @@ ramips_board_detect() {
 	*"F7C027")
 		name="f7c027"
 		;;
+	*"Fir300M")
+		name="fir300m"
+		;;
 	*"FireWRT")
 		name="firewrt"
 		;;
@@ -333,6 +336,9 @@ ramips_board_detect() {
 		;;
 	*"MT7688 evaluation"*)
 		name="mt7688"
+		;;
+	*"MW300R-V6")
+		name="mw300r-v6"
 		;;
 	*"MZK-750DHP")
 		name="mzk-750dhp"
