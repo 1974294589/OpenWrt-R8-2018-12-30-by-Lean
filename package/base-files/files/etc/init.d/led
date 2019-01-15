@@ -71,8 +71,20 @@ load_led() {
 		"netdev")
 			[ -n "$dev" ] && {
 				echo $dev > /sys/class/leds/${sysfs}/device_name
-				echo "${mode:-link}" > /sys/class/leds/${sysfs}/mode
 				echo $interval > /sys/class/leds/${sysfs}/interval
+				if [ -e /sys/class/leds/${sysfs}/link ];then {
+				if grep -q 'link' /etc/config/system;then
+					echo 1 &gt; /sys/class/leds/${sysfs}/link
+				fi
+				if grep -q 'tx' /etc/config/system;then
+					echo 1 &gt; /sys/class/leds/${sysfs}/tx
+				fi
+				if grep -q 'rs' /etc/config/system;then
+					echo 1 &gt; /sys/class/leds/${sysfs}/rs
+				fi
+			}
+			else echo "${mode:-}" &gt; /sys/class/leds/${sysfs}/mode
+			fi	
 			}
 			;;
 
